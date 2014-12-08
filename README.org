@@ -2,16 +2,43 @@
 
 ** Vortragsstrukturierung
 *** Begrüßung, Erwartungen
-- Hallo
+- Hallo!
 - Wer sind wir?
 - Was sind eure Erwartungen, Hoffnungen (oder auch Befürchtungen)?
 - Vorstellung Ablaufstruktur
 
 *** Motivation
 Warum das alles eigentlich?
+- Emails sind unsicher
+- Nur wer ein bisschen was versteht, kann sich bewusst verhalten
 
 *** Theorie
-Symmetrische Verschlüsselung, public-private keys, Primzahlen etc.
+Etwas trockener Hintergrund ist leider notwendig.  Aber wir machen es
+ganz kurz!
+
+- Früher :: symmetrische Verschlüsselung, ein Schlüssel zum
+            Verschlüsseln und wieder Entschlüsseln, Schlüssel muss
+            sicher von der Senderin zum Empfänger gebracht werden
+            (alte Agentenfilme: Aktenkoffer mit Selbstzerstörung, das
+            ist doch aufwändig)
+
+- New & hot :: Asymmetrische Verschlüsselung mit zwei verschiedenen
+               Schlüsseln: einer nur zum Verschlüsseln (darf auch den
+               Bösen bekannt sein) und einer zum Entschlüsseln
+               (geheim, muss aber nicht mehr quer durch die Stadt
+               getragen werden).
+- Wie geht das? :: Mathe!  Zahlen multiplizieren geht leicht, Zahlen
+                   wieder aufteilen nicht.
+- Taschenrechner dabei? ::
+  - 7 x 11 = ?
+  - 65 = ? x ? (5 x 13)
+  - 11251 x 2953 = 33224203
+  - 12883649 = ? (2957 x 4357) kann wohl niemand in unter einem Tag
+    ausrechnen, auch mit Taschenrechner
+- Verschlüsselung? :: Das Produkt aus den zwei Primzahlen ist in etwa
+     der öffentliche Schlüssel (auch die Geheimdienste können die Zahl
+     nicht wieder aufspalten), die zwei kleinen Zahlen sind der
+     private Schlüssel und müssen geheim bleiben.
 
 *** Theoretische Praxis
 Schlüsselerstellung (Zufall), Schlüsselaustausch, Schlüsselserver,
