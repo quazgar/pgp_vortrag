@@ -21,7 +21,6 @@ ganz kurz!
             sicher von der Senderin zum Empfänger gebracht werden
             (alte Agentenfilme: Aktenkoffer mit Selbstzerstörung, das
             ist doch aufwändig)
-
 - New & hot :: Asymmetrische Verschlüsselung mit zwei verschiedenen
                Schlüsseln: einer nur zum Verschlüsseln (darf auch den
                Bösen bekannt sein) und einer zum Entschlüsseln
