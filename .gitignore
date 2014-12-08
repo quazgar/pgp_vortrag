@@ -1,3 +1,4 @@
+# -*- mode:conf; -*-
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

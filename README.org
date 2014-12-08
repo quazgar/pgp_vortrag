@@ -1,0 +1,55 @@
+* PGP Vortrag
+
+** Vortragsstrukturierung
+*** Begrüßung, Erwartungen
+- Hallo
+- Wer sind wir?
+- Was sind eure Erwartungen, Hoffnungen (oder auch Befürchtungen)?
+- Vorstellung Ablaufstruktur
+
+*** Motivation
+Warum das alles eigentlich?
+
+*** Theorie
+Symmetrische Verschlüsselung, public-private keys, Primzahlen etc.
+
+*** Theoretische Praxis
+Schlüsselerstellung (Zufall), Schlüsselaustausch, Schlüsselserver,
+Fingerprints, Signaturen (Keysigning-Parties), Widerrufszertifikat,
+Email (Betreff, Header, Anhänge)
+
+Abgrenzen zu:
+- Festplattenverschlüsselung
+- Apps auf Handys/Smartphones, Chat
+- Anonymität
+
+*** Die Praxis in der Theorie
+GPG4Win, Enigmail, sonstige Programme
+
+Screenshots: Installation, Schlüsselgenerierung
+(Widerrufszertifikat!), Einrichtung Enigmail, Schlüssel hochladen,
+Schlüssel runterladen, Mail versenden, Mail empfangen
+
+*** Praktische Praxis
+- Runterladen/Verteilen
+- Installieren
+- ... (wie oben)
+
+Vielleicht zuerst eine Mail an sich selber schreiben?
+
+*** Weiterführendes
+- Skript?
+- Feedbackrunde
+- Weitere Wünsche?
+
+** Dateien hier
+
+Dateistruktur:
+
+- .tex
+- bilder :: Ordner mit Bildern
+  - src :: Ordner mit Originalbildern
+  - work :: Bearbeitete Bilder im xcf-, svg- oder sonstigen Formaten
+
+
+
