@@ -109,6 +109,10 @@
     \frametitle{Pretty Good Privacy}
     Eine Methode asymmetrische Verschlüsselung umzusetzen ist
     \alert{P}retty \alert{G}ood \alert{P}rivacy, kurz PGP.
+    \begin{enumerate}
+        \item benutzt Primzahlfaktorisierung
+        \item stellt Signaturen bereit
+    \end{enumerate}
 \end{frame}
 \begin{frame}
     \frametitle{Schlüsselerstellung}
@@ -120,13 +124,26 @@
 \begin{frame}
     \frametitle{Schlüsselaustausch}
     \begin{description}
-        \item[Schlüsselserver: ] Das schwarze Brett für PGP-Schlüssel
+        \item[Per Mail:] umständlich
+        \item[Schlüsselserver:] Das schwarze Brett für PGP-Schlüssel
     \end{description}
     % Schlüsselaustausch und -server
 \end{frame}
 \begin{frame}
     \frametitle{Authentifikation}
     % Fingerprints und Signaturen
+    Wem gehört der PGP-Schlüssel?
+    \begin{description}
+        \item[Signatur:] unterschreiben von Inhalten mit geheimen Schlüssel
+        \item[Fingerprint:] Abbild vom öffentlichem Schlüssel
+    \end{description}
+    Signierte Mails reichen nicht, die Signatur muss auch stimmen!
+    \begin{enumerate}
+        \item Signieren von öffentlichen Schlüsseln möglich
+        \item Überprüfen, ob die Mailadresse und öffentlicher Schlüssel zur Person passen
+        \item Danach den Schlüssel signieren und auf Schlüsselserver laden
+        \item Keysigning parties
+    \end{enumerate}
 \end{frame}
 \begin{frame}
     \frametitle{Widerrufen von Schlüsseln}
