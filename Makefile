@@ -1,2 +1,2 @@
 default:
-	pdflatex verschlüsselung.tex
+	pdflatex verschluesselung.tex
