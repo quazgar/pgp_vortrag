@@ -24,9 +24,9 @@
   \frametitle{Warum das alles eigentlich?}
 
   \begin{itemize}[<+(1)->]
-  \item Emails sind unsicher
+  \item Emails können sehr leicht mitgelesen werden.
   \item Nur wer ein bisschen die Technik versteht, kann sich bewusst
-    verhalten
+    verhalten.
   \end{itemize}
 \end{frame}
 
@@ -107,12 +107,13 @@
 
 \begin{frame}
     \frametitle{Pretty Good Privacy}
+    \onslide<2>
     Eine Methode asymmetrische Verschlüsselung umzusetzen ist
     \alert{P}retty \alert{G}ood \alert{P}rivacy, kurz PGP.
-    \begin{enumerate}
+    \begin{itemize}
         \item benutzt Primzahlfaktorisierung
         \item stellt Signaturen bereit
-    \end{enumerate}
+    \end{itemize}
 \end{frame}
 \begin{frame}
     \frametitle{Schlüsselerstellung}
@@ -138,21 +139,27 @@
         \item[Fingerprint:] Abbild vom öffentlichem Schlüssel
     \end{description}
     Signierte Mails reichen nicht, die Signatur muss auch stimmen!
-    \begin{enumerate}
+    \onslide<2>
+    \begin{itemize}
         \item Signieren von öffentlichen Schlüsseln möglich
         \item Überprüfen, ob die Mailadresse und öffentlicher Schlüssel zur Person passen
         \item Danach den Schlüssel signieren und auf Schlüsselserver laden
         \item Keysigning parties
-    \end{enumerate}
+    \end{itemize}
 \end{frame}
 \begin{frame}
     \frametitle{Widerrufen von Schlüsseln}
-    % Widerrufszert
-\end{frame}
-\begin{frame}
-    \frametitle{Mails}
-    % Mails
-    %Email (Betreff, Header, Anhänge)
+    Was tun wen's brennt?
+    \begin{itemize}
+        \item Passwort vergessen
+        \item Private key verloren
+        \item Rechner beschlagnahmt
+    \end{itemize}
+    Der Schlüssel darf nicht mehr verwendet werden!
+    \onslide<2>
+    \alert{Widerrufszertifikat} erklärt den Schlüssel für ungültig.
+
+    Weiter: Ablaufdatum für Schlüssel
 \end{frame}
 
 \section{Die Praxis in der Theorie}
