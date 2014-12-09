@@ -32,9 +32,13 @@
 
 \section{Theorie}
 \label{sec:theorie}
-\frame{ \frametitle{\insertsection}
-  Etwas trockener Hintergrund ist leider notwendig.  Aber wir
-  machen es ganz kurz! }
+\begin{frame}
+    \frametitle{\insertsection}
+    \begin{description}
+        \item[Verschlüsselung] Ich will nicht, dass alle wissen, was ich schreibe.
+        \item[Authentifikation] Ich will mit der richtigen Person sprechen.
+    \end{description}
+\end{frame}
 
 \subsection{Symmetrische und Asymmetrische Verschlüsselung}
 \begin{frame}
@@ -42,17 +46,19 @@
   \begin{overprint}
     \onslide<1-4>
     \begin{description}
-    \item[Symmetrische Verschlüsselung] \alert{ein} Schlüssel
-      zum Verschlüsseln und wieder Entschlüsseln\only<4>{, Schlüssel muss
-      sicher von der Senderin zum Empfänger gebracht werden (alte
+    \item[Symmetrische Verschlüsselung:] \alert{Ein} Schlüssel
+      zum Verschlüsseln und wieder Entschlüsseln.
+      
+      \only<4>{Der Schlüssel muss
+      sicher von der Senderin zum Empfänger gebracht werden. (alte
       Agentenfilme: Aktenkoffer mit Selbstzerstörung, das ist doch
       aufwändig)}
     \end{description}
     \onslide<5-7>
     \begin{description}
-    \item[Asymmetrische Verschlüsselung] zwei
-      Schlüsseln: \alert{öffentlicher} nur zum Verschlüsseln (darf
-      auch den Bösen bekannt sein) und \alert{privater} zum
+    \item[Asymmetrische Verschlüsselung:] Zwei
+      Schlüssel: Ein \alert{öffentlicher} nur zum Verschlüsseln (darf
+      auch den Bösen bekannt sein) und ein \alert{privater} zum
       Entschlüsseln (geheim, muss aber nicht mehr quer durch die Stadt
       getragen werden)
     \end{description}
@@ -99,19 +105,29 @@
 \section{Theoretische Praxis}
 \label{sec-1-1-4}
 
-Schlüsselerstellung (Zufall), Schlüsselaustausch, Schlüsselserver,
-Fingerprints, Signaturen (Keysigning-Parties), Widerrufszertifikat,
-Email (Betreff, Header, Anhänge)
-
-Abgrenzen zu:
-\begin{itemize}
-\item Festplattenverschlüsselung
-\item Apps auf Handys/Smartphones, Chat
-\item Anonymität
-\end{itemize}
-
+% Reihenfolge
+\begin{frame}
+    \frametitle{Schlüsselerstellung}
+\end{frame}
+\begin{frame}
+    \frametitle{Schlüsselaustausch}
+    % Schlüsselaustausch und -server
+\end{frame}
+\begin{frame}
+    \frametitle{Authentifikation}
+    % Fingerprints und Signaturen
+\end{frame}
+\begin{frame}
+    \frametitle{Widerrufen von Schlüsseln}
+    % Widerrufszert
+\end{frame}
+\begin{frame}
+    \frametitle{Mails}
+    % Mails
+    %Email (Betreff, Header, Anhänge)
+\end{frame}
 \section{Die Praxis in der Theorie}
-\label{sec:programme}
+\label{sec-1-1-5}
 
 \begin{frame}
   \frametitle{\insertsection}
@@ -131,9 +147,8 @@ Abgrenzen zu:
 Screenshots: Installation, Schlüsselgenerierung
 (Widerrufszertifikat!), Einrichtung Enigmail, Schlüssel hochladen,
 Schlüssel runterladen, Mail versenden, Mail empfangen
-
 \section{Praktische Praxis}
-\label{sec:praxis}
+\label{sec-1-1-6}
 
 \begin{itemize}
 \item Runterladen/Verteilen
@@ -142,7 +157,6 @@ Schlüssel runterladen, Mail versenden, Mail empfangen
 \end{itemize}
 
 Vielleicht zuerst eine Mail an sich selber schreiben?
-
 \section{Weiterführendes}
 \label{sec-1-1-7}
 
