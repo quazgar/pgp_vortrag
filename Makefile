@@ -1,0 +1,2 @@
+default:
+	pdflatex verschlüsselung.tex
