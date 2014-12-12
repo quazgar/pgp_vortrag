@@ -49,23 +49,17 @@
     \item[Symmetrische Verschlüsselung:] \alert{Ein} Schlüssel
       zum Verschlüsseln und wieder Entschlüsseln.
       
-      \only<4>{Der Schlüssel muss
-      sicher von der Senderin zum Empfänger gebracht werden. (alte
-      Agentenfilme: Aktenkoffer mit Selbstzerstörung, das ist doch
-      aufwändig)}
+      \onslide<4>{Der Schlüssel muss sicher von der Senderin zum
+        Empfänger gebracht werden. (alte Agentenfilme: Aktenkoffer mit
+        Selbstzerstörung und so)}
     \end{description}
     \onslide<5-7>
     \begin{description}
-    \item[Asymmetrische Verschlüsselung:] Zwei
-      Schlüssel: Ein \alert{öffentlicher} nur zum Verschlüsseln (darf
-      auch den Bösen bekannt sein) und ein \alert{privater} zum
-      Entschlüsseln (geheim, muss aber nicht mehr quer durch die Stadt
-      getragen werden)
-    \end{description}
-    \onslide<8>
-    \begin{description}
-    \item[Wie geht das?] Mathe!  Zahlen multiplizieren geht leicht,
-      Zahlen wieder aufteilen nicht.
+    \item[Asymmetrische Verschlüsselung:] Zwei Schlüssel: Ein
+      \alert{öffentlicher} nur zum Verschlüsseln (darf auch den Bösen
+      bekannt sein) und ein \alert{privater} zum Entschlüsseln
+      (geheim, muss aber nicht mehr quer durch die Stadt getragen
+      werden).
     \end{description}
   \end{overprint}
   \vspace{1em}
@@ -77,28 +71,41 @@
         \includegraphics[height=9em]{bilder/agent_koffer.jpg}
       \end{center}
     }
-    \includegraphics<6>[width=\columnwidth]{bilder/public_key_verfahren_schluessel.png}
-    \includegraphics<7>[width=\columnwidth]{bilder/public_key_verfahren_text.png}
+    \includegraphics<6>[width=\columnwidth]{%
+      bilder/public_key_verfahren_schluessel.png}
+    \includegraphics<7>[width=\columnwidth]{%
+      bilder/public_key_verfahren_text.png}
   \end{overlayarea}
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{\insertsubsection}
+  \begin{description}
+  \item [Wie geht das?] Mathe!  Zahlen multiplizieren geht leicht,
+    Zahlen wieder aufteilen nicht.
+  \end{description}
+  \begin{center}
+    \includegraphics[width=0.9\columnwidth]{bilder/math1.png}\\
+    \includegraphics[width=0.9\columnwidth]{bilder/math2.png}
+  \end{center}
 \end{frame}
 
 \subsection{Primzahlen rechnen}
 \begin{frame}
   \frametitle{\insertsubsection}
   \begin{description}
-  \item[Taschenrechner dabei?]
+  \item[Taschenrechner dabei?] \mbox{}\\
     \begin{itemize}
-    \item 7 x 11 = ?
-    \item 65 = ? x ? (5 x 13)
-    \item 11251 x 2953 = 33224203
-    \item 12883649 = ? (2957 x 4357) kann wohl niemand in unter einem
-      Tag ausrechnen, auch mit Taschenrechner
+    \item<1-> 7 x 11 = ?
+    \item<2-> 65 = \only<2>{? x ?}\onslide<3->{5 x 13}
+    \item<4-> 11251 x 2953 = \only<4>{?}\onslide<5->{33224203}
+    \item<6-> 12883649 = \only<6>{? x ?}\onslide<7->{2957 x 4357}
     \end{itemize}
-  \item[Verschlüsselung?] Das Produkt aus den zwei Primzahlen ist in
-    etwa der öffentliche Schlüssel (auch die Geheimdienste können die
-    Zahl nicht wieder aufspalten), die zwei kleinen Zahlen sind der
-    private Schlüssel und müssen geheim bleiben.
+  \item[Verschlüsselung?]<8-> Das Produkt aus den zwei Primzahlen ist
+    in etwa der öffentliche Schlüssel (auch die Geheimdienste können
+    die Zahl nicht wieder aufspalten), die zwei kleinen Zahlen sind
+    der private Schlüssel und müssen geheim bleiben.
   \end{description}
 \end{frame}
 
@@ -111,7 +118,7 @@
     Eine Methode asymmetrische Verschlüsselung umzusetzen ist
     \alert{P}retty \alert{G}ood \alert{P}rivacy, kurz PGP.
     \begin{itemize}
-        \item benutzt Primzahlfaktorisierung
+        \item benutzt Primzahlzerlegung
         \item stellt Signaturen bereit
     \end{itemize}
 \end{frame}
@@ -152,7 +159,7 @@
     Was tun wen's brennt?
     \begin{itemize}
         \item Passwort vergessen
-        \item Private key verloren
+        \item Private Key verloren
         \item Rechner beschlagnahmt
     \end{itemize}
     Der Schlüssel darf nicht mehr verwendet werden!
@@ -182,59 +189,106 @@
 
 \begin{frame}
   \frametitle{\insertsection{} -- Installation GPG4Win}
-  Screenshots: Installation, Schlüsselgenerierung
-  (Widerrufszertifikat!), Einrichtung Enigmail, Schlüssel hochladen,
-  Schlüssel runterladen, Mail versenden, Mail empfangen
-\end{frame}
-
-\begin{frame}
-  \frametitle{\insertsection{} -- Schlüsselgenerierung}
+  \centering
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/gpg_download}
+  }
+  \only<+>{
+    \includegraphics[width=0.7\columnwidth]{bilder/gpg_installation}
+  }
 \end{frame}
 
 \begin{frame}
   \frametitle{\insertsection{} -- Installation Enigmail}
+  \centering
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/enigmail_addons}
+  }
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/enigmail_suche}
+  }
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/enigmail_gefunden}
+  }
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/enigmail_einstellungen}
+  }
 \end{frame}
 
 \begin{frame}
-  \frametitle{\insertsection{} -- Enigmail einrichten}
+  \frametitle{\insertsection{} -- Schlüsselgenerierung}
+  \centering
+  \only<+>{
+    \includegraphics[width=0.5\columnwidth]{bilder/schluessel_verwalten}
+  }
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/neues_schluesselpaar}
+  }
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/schluessel_erzeugen}
+  }
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/widerruf_erzeugen}
+  }
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/widerruf_erzeugt}
+  }
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/schluessel_eigenschaften}
+  }
 \end{frame}
 
 \begin{frame}
   \frametitle{\insertsection{} -- Schlüssel hochladen}
+  \centering
+  \only<+>{
+    \includegraphics[width=0.95\columnwidth]{bilder/schluessel_hochladen}
+  }
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/schluesselserver}
+  }
 \end{frame}
 
 \begin{frame}
   \frametitle{\insertsection{} -- Schlüssel runterladen}
+  \centering
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/schluessel_suchen}
+  }
+  \only<+>{
+    \includegraphics[width=0.8\columnwidth]{bilder/schluessel_suchen_eingabe}
+  }
 \end{frame}
 
 \begin{frame}
   \frametitle{\insertsection{} -- Mail versenden}
-\end{frame}
-
-\begin{frame}
-  \frametitle{\insertsection{} -- Mail empfangen}
+  \centering
+  \only<+>{
+    \includegraphics[width=\columnwidth]{bilder/mail_schreiben}
+  }
 \end{frame}
 
 \section{Praktische Praxis}
-\label{sec-1-1-6}
+\label{sec:praxis}
 
 \begin{frame}
   \frametitle{\insertsection}
   \begin{itemize}
-  \item Runterladen/Verteilen
-  \item Installieren
-  \item \ldots{} (wie oben)
+  \item GPG4Win und Enigmail runterladen
+  \item Beides installieren
+  \item Schlüssel erzeugen
+  \item Widerrufszertifikat erzeugen und abpseichern
+  \item Test-Mail schreiben
   \end{itemize}
-  Vielleicht zuerst eine Mail an sich selber schreiben?
 \end{frame}
 
-\section{Weiterführendes}
-\label{sec-1-1-7}
+\section{Wie weiter?}
+\label{sec:weiter}
 
 \begin{frame}
   \frametitle{\insertsection}
   \begin{itemize}
-  \item Skript?
+  \item Skript
   \item Feedbackrunde
   \item Weitere Wünsche?
   \end{itemize}

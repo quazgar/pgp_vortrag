@@ -52,9 +52,13 @@ Abgrenzen zu:
 *** Die Praxis in der Theorie
 GPG4Win, Enigmail, sonstige Programme
 
-Screenshots: Installation, Schlüsselgenerierung
-(Widerrufszertifikat!), Einrichtung Enigmail, Schlüssel hochladen,
-Schlüssel runterladen, Mail versenden, Mail empfangen
+Screenshots:
+- [X] Installation
+- [X] Einrichtung Enigmail
+- [X] Schlüsselgenerierung (Widerrufszertifikat!)
+- [X] Schlüssel hochladen
+- [X] Schlüssel runterladen
+- [X] Mail versenden
 
 *** Praktische Praxis
 - Runterladen/Verteilen
