@@ -23,7 +23,7 @@
 \begin{frame}
   \frametitle{Warum das alles eigentlich?}
 
-  \begin{itemize}[<+(1)->]
+  \begin{itemize}
   \item Emails können sehr leicht mitgelesen werden.
   \item Nur wer die Technik ein bisschen versteht, kann sich bewusst
     verhalten.
@@ -97,7 +97,7 @@
   \begin{description}
   \item[Taschenrechner dabei?] \mbox{}\\
     \begin{itemize}
-    \item<1-> 7 x 11 = ?
+    \item<1-> 7 x 11 = \only<1>{?}\onslide<2->{77}
     \item<2-> 65 = \only<2>{? x ?}\onslide<3->{5 x 13}
     \item<4-> 11251 x 2953 = \only<4>{?}\onslide<5->{33224203}
     \item<6-> 12883649 = \only<6>{? x ?}\onslide<7->{2957 x 4357}
@@ -151,7 +151,7 @@
     % Fingerprints und Signaturen
     Wem gehört der PGP-Schlüssel?
     \begin{description}
-        \item[Signatur:] unterschreiben von Inhalten mit geheimen Schlüssel
+        \item[Signatur:] Unterschreiben von Inhalten mit geheimen Schlüssel
         \item[Fingerprint:] Abbild vom öffentlichem Schlüssel
     \end{description}
     Signierte Mails reichen nicht, die Signatur muss auch stimmen!
